@@ -128,7 +128,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/randastore/scvps/main/"
+    REPO="https://raw.githubusercontent.com/RanTempest/scvps/main/"
 
 ####
 start=$(date +%s)
@@ -992,3 +992,7 @@ rm -rf /root/domain
 #sudo hostnamectl set-hostname $user
 secs_to_human "$(($(date +%s) - ${start}))"
 sudo hostnamectl set-hostname $username
+echo -e "${green} Script Successfull Installed"
+echo ""
+read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
+reboot
